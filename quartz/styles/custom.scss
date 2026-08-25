@@ -1,3 +1,424 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+/* =========================================================
+   GRANDES ARCHIVES DE VENDEAUME — V4 CORRECTIF
+   Palette Windhelm/Vendeaume
+   #595d5c #6d7d85 #476f8e #585f75 #a9a7c0
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   VARIABLES QUARTZ — permet aussi au graphe d'utiliser
+   réellement la palette Vendeaume.
+   --------------------------------------------------------- */
+html[saved-theme="dark"] {
+  --light: #24292e !important;
+  --lightgray: #595d5c !important;
+  --gray: #6d7d85 !important;
+  --darkgray: #c9ced8 !important;
+  --dark: #eef2f5 !important;
+  --secondary: #476f8e !important;
+  --tertiary: #a9a7c0 !important;
+  --highlight: rgba(71, 111, 142, .18) !important;
+  --textHighlight: rgba(169, 167, 192, .28) !important;
+}
+
+html[saved-theme="light"] {
+  --light: #e3e7ea !important;
+  --lightgray: #a9a7c0 !important;
+  --gray: #6d7d85 !important;
+  --darkgray: #3e4855 !important;
+  --dark: #29323b !important;
+  --secondary: #476f8e !important;
+  --tertiary: #585f75 !important;
+  --highlight: rgba(71, 111, 142, .14) !important;
+  --textHighlight: rgba(169, 167, 192, .36) !important;
+}
+
+/* =========================================================
+   MODE SOMBRE
+   ========================================================= */
+html[saved-theme="dark"] body,
+html[saved-theme="dark"] #quartz-body,
+html[saved-theme="dark"] .page {
+  background: #24292e !important;
+  color: #d8dde2 !important;
+}
+
+/* Colonnes latérales */
+html[saved-theme="dark"] #quartz-body .left,
+html[saved-theme="dark"] #quartz-body .right {
+  background: #2b3035 !important;
+}
+
+/* Colonne centrale */
+html[saved-theme="dark"] #quartz-body .center {
+  background: #30363d !important;
+  border-left: 1px solid #595d5c !important;
+  border-right: 1px solid #595d5c !important;
+  box-shadow: 0 0 28px rgba(0,0,0,.22) !important;
+  padding-inline: clamp(1rem, 2vw, 2rem) !important;
+}
+
+/* Texte */
+html[saved-theme="dark"] p,
+html[saved-theme="dark"] li,
+html[saved-theme="dark"] td,
+html[saved-theme="dark"] tr,
+html[saved-theme="dark"] span,
+html[saved-theme="dark"] .content-meta,
+html[saved-theme="dark"] .breadcrumb-container {
+  color: #d8dde2 !important;
+}
+
+/* Titres */
+html[saved-theme="dark"] h1,
+html[saved-theme="dark"] h2,
+html[saved-theme="dark"] h3,
+html[saved-theme="dark"] h4,
+html[saved-theme="dark"] h5,
+html[saved-theme="dark"] h6,
+html[saved-theme="dark"] .page-title,
+html[saved-theme="dark"] .page-title a,
+html[saved-theme="dark"] .article-title,
+html[saved-theme="dark"] .explorer h2,
+html[saved-theme="dark"] .toc h3,
+html[saved-theme="dark"] .graph h3 {
+  color: #a9a7c0 !important;
+}
+
+html[saved-theme="dark"] article h1 {
+  border-bottom: 2px solid #476f8e !important;
+  padding-bottom: .55rem !important;
+}
+
+html[saved-theme="dark"] article h2 {
+  border-bottom: 1px solid #595d5c !important;
+  padding-bottom: .3rem !important;
+}
+
+/* Liens */
+html[saved-theme="dark"] a,
+html[saved-theme="dark"] a.internal,
+html[saved-theme="dark"] .explorer a,
+html[saved-theme="dark"] .toc a {
+  color: #8aa9bf !important;
+}
+
+html[saved-theme="dark"] a:hover,
+html[saved-theme="dark"] a.internal:hover,
+html[saved-theme="dark"] .explorer a:hover,
+html[saved-theme="dark"] .toc a:hover {
+  color: #c3c1d6 !important;
+}
+
+/* ---------------------------------------------------------
+   CORRECTIF 1 : rectangle noir derrière l'Explorateur
+   --------------------------------------------------------- */
+html[saved-theme="dark"] .explorer,
+html[saved-theme="dark"] .explorer-content,
+html[saved-theme="dark"] .explorer .folder-outer,
+html[saved-theme="dark"] .explorer .folder-container,
+html[saved-theme="dark"] .explorer .folder-button,
+html[saved-theme="dark"] .explorer .folder-title,
+html[saved-theme="dark"] .explorer ul,
+html[saved-theme="dark"] .explorer li {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+html[saved-theme="dark"] .explorer .folder-container,
+html[saved-theme="dark"] .explorer .folder-button,
+html[saved-theme="dark"] .explorer .folder-title {
+  color: #b8b6cb !important;
+}
+
+html[saved-theme="dark"] .explorer a,
+html[saved-theme="dark"] .explorer button {
+  border-radius: 5px !important;
+}
+
+html[saved-theme="dark"] .explorer a:hover,
+html[saved-theme="dark"] .explorer button:hover {
+  background: rgba(71,111,142,.16) !important;
+}
+
+/* Recherche */
+html[saved-theme="dark"] .search-button,
+html[saved-theme="dark"] button.search-button {
+  border: 1px solid #595d5c !important;
+  background: #343b43 !important;
+  color: #e3e7eb !important;
+}
+
+/* Propriétés / callouts */
+html[saved-theme="dark"] .metadata,
+html[saved-theme="dark"] .metadata-container,
+html[saved-theme="dark"] .properties,
+html[saved-theme="dark"] .callout {
+  background-color: #343a46 !important;
+  border-color: #585f75 !important;
+}
+
+/* ---------------------------------------------------------
+   CORRECTIF 2 : suppression des accents violets résiduels
+   --------------------------------------------------------- */
+html[saved-theme="dark"] .tag-link,
+html[saved-theme="dark"] a.tag-link,
+html[saved-theme="dark"] .tags a,
+html[saved-theme="dark"] a[href^="/tags/"] {
+  background: #476f8e !important;
+  color: #eef2f5 !important;
+  border-color: #6d7d85 !important;
+}
+
+html[saved-theme="dark"] .tag-link:hover,
+html[saved-theme="dark"] a.tag-link:hover,
+html[saved-theme="dark"] .tags a:hover,
+html[saved-theme="dark"] a[href^="/tags/"]:hover {
+  background: #6d7d85 !important;
+  color: #ffffff !important;
+}
+
+/* Table des matières : lisibilité */
+html[saved-theme="dark"] .toc a {
+  color: #7f929f !important;
+}
+
+html[saved-theme="dark"] .toc a.in-view,
+html[saved-theme="dark"] .toc a:hover {
+  color: #a9a7c0 !important;
+}
+
+/* Graphe : le code Quartz lit principalement les variables ci-dessus */
+html[saved-theme="dark"] .graph,
+html[saved-theme="dark"] .graph-container,
+html[saved-theme="dark"] .graph > .graph-outer {
+  background: transparent !important;
+  border-color: #595d5c !important;
+}
+
+/* Tableaux */
+html[saved-theme="dark"] table {
+  background: #2b3035 !important;
+  border-color: #595d5c !important;
+}
+
+html[saved-theme="dark"] th {
+  background: #39434d !important;
+  color: #b8b6cb !important;
+  border-color: #6d7d85 !important;
+}
+
+html[saved-theme="dark"] td,
+html[saved-theme="dark"] tr {
+  border-color: #595d5c !important;
+}
+
+/* Code */
+html[saved-theme="dark"] code {
+  background: #383f47 !important;
+  color: #dfe6eb !important;
+  border-color: #595d5c !important;
+}
+
+/* Images */
+html[saved-theme="dark"] article img {
+  border: 1px solid #6d7d85 !important;
+  outline: 3px solid rgba(71,111,142,.20) !important;
+  outline-offset: -4px !important;
+  box-shadow: 0 8px 22px rgba(0,0,0,.32) !important;
+}
+
+/* =========================================================
+   MODE CLAIR
+   ========================================================= */
+html[saved-theme="light"] body,
+html[saved-theme="light"] #quartz-body,
+html[saved-theme="light"] .page {
+  background: #d7dde1 !important;
+  color: #30363d !important;
+}
+
+html[saved-theme="light"] #quartz-body .left,
+html[saved-theme="light"] #quartz-body .right {
+  background: #cbd3d8 !important;
+}
+
+html[saved-theme="light"] #quartz-body .center {
+  background: #e3e7ea !important;
+  border-left: 1px solid #6d7d85 !important;
+  border-right: 1px solid #6d7d85 !important;
+  box-shadow: 0 0 25px rgba(47,58,68,.13) !important;
+  padding-inline: clamp(1rem, 2vw, 2rem) !important;
+}
+
+html[saved-theme="light"] h1,
+html[saved-theme="light"] h2,
+html[saved-theme="light"] h3,
+html[saved-theme="light"] h4,
+html[saved-theme="light"] .page-title,
+html[saved-theme="light"] .page-title a,
+html[saved-theme="light"] .article-title {
+  color: #40495d !important;
+}
+
+html[saved-theme="light"] article h1 {
+  border-bottom: 2px solid #476f8e !important;
+}
+
+html[saved-theme="light"] a,
+html[saved-theme="light"] a.internal,
+html[saved-theme="light"] .explorer a {
+  color: #476f8e !important;
+}
+
+html[saved-theme="light"] a:hover,
+html[saved-theme="light"] a.internal:hover {
+  color: #585f75 !important;
+}
+
+html[saved-theme="light"] .explorer,
+html[saved-theme="light"] .explorer-content,
+html[saved-theme="light"] .explorer .folder-outer,
+html[saved-theme="light"] .explorer .folder-container,
+html[saved-theme="light"] .explorer ul,
+html[saved-theme="light"] .explorer li {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+html[saved-theme="light"] .search-button,
+html[saved-theme="light"] button.search-button {
+  background: #d4dbe0 !important;
+  border-color: #6d7d85 !important;
+}
+
+html[saved-theme="light"] .callout,
+html[saved-theme="light"] .metadata,
+html[saved-theme="light"] .properties {
+  background: #d4d6df !important;
+  border-color: #a9a7c0 !important;
+}
+
+html[saved-theme="light"] .tag-link,
+html[saved-theme="light"] a.tag-link,
+html[saved-theme="light"] .tags a,
+html[saved-theme="light"] a[href^="/tags/"] {
+  background: #6d7d85 !important;
+  color: #ffffff !important;
+  border-color: #476f8e !important;
+}
+
+/* =========================================================
+   COMMUN
+   ========================================================= */
+.page-title {
+  text-transform: uppercase !important;
+  font-variant: small-caps !important;
+  letter-spacing: .055em !important;
+}
+
+article h1 {
+  font-variant: small-caps !important;
+  letter-spacing: .025em !important;
+}
+
+article h2::before {
+  content: "◆" !important;
+  color: #476f8e !important;
+  font-size: .68em !important;
+  margin-right: .5rem !important;
+}
+
+blockquote {
+  border-left: 4px solid #476f8e !important;
+}
+
+::selection {
+  background: rgba(71,111,142,.45) !important;
+}
+
+/* =========================================================
+   V5 — FINITIONS VISUELLES
+   ========================================================= */
+
+/* L'accueil possède déjà son H1 dans la note :
+   on masque donc le titre technique Quartz pour éviter le doublon. */
+body[data-slug="index"] .article-title,
+[data-slug="index"] .article-title {
+  display: none !important;
+}
+
+/* Table des matières : meilleur contraste sans sortir de la palette. */
+html[saved-theme="dark"] .toc a {
+  color: #8f9da7 !important;
+}
+
+html[saved-theme="dark"] .toc a.in-view,
+html[saved-theme="dark"] .toc a:hover {
+  color: #c3c1d6 !important;
+}
+
+/* Les titres de panneaux latéraux restent bien lisibles. */
+html[saved-theme="dark"] .toc h3,
+html[saved-theme="dark"] .graph h3,
+html[saved-theme="dark"] .explorer h2 {
+  color: #b8b6cb !important;
+}
+
+/* Graphe : contour un peu moins dur. */
+html[saved-theme="dark"] .graph-container {
+  border-color: #595d5c !important;
+  background: #292e33 !important;
+}
+
+/* Mobile */
+@media all and ($mobile) {
+  #quartz-body .center {
+    border-left: 0 !important;
+    border-right: 0 !important;
+    box-shadow: none !important;
+  }
+}
+
+/* =========================================================
+   V6 — FINITIONS FINALES
+   ========================================================= */
+
+/* Quartz 5 / note-properties n'intègre actuellement qu'une locale en-US
+   pour ce libellé : on le francise visuellement sans toucher au plugin. */
+.note-properties-title {
+  font-size: 0 !important;
+}
+
+.note-properties-title::after {
+  content: "Propriétés" !important;
+  font-size: 0.95rem !important;
+  line-height: 1.2 !important;
+  color: inherit !important;
+}
+
+/* Table des matières : contraste un peu plus confortable. */
+html[saved-theme="dark"] .toc a {
+  color: #98a5af !important;
+  opacity: .88 !important;
+}
+
+html[saved-theme="dark"] .toc a.in-view,
+html[saved-theme="dark"] .toc a:hover {
+  color: #c7c5d8 !important;
+  opacity: 1 !important;
+}
+
+html[saved-theme="light"] .toc a {
+  color: #586a78 !important;
+  opacity: .9 !important;
+}
+
+html[saved-theme="light"] .toc a.in-view,
+html[saved-theme="light"] .toc a:hover {
+  color: #40495d !important;
+  opacity: 1 !important;
+}
