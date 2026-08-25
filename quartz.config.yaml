@@ -1,12 +1,10 @@
-# yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
-  pageTitleSuffix: ""
+  pageTitle: Grandes Archives de Vendeaume
+  pageTitleSuffix: " — Vendeaume"
   enableSPA: true
   enablePopovers: true
-  analytics:
-    provider: plausible
-  locale: en-US
+  analytics: null
+  locale: fr-FR
   baseUrl: Skadi-Skovgaard.github.io/grandes-archives-de-vendeaume
   ignorePatterns:
     - private
@@ -16,30 +14,31 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
+      title: Cinzel
+      header: Cinzel
+      body: Lora
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#faf8f8"
-        lightgray: "#e5e5e5"
-        gray: "#b8b8b8"
-        darkgray: "#4e4e4e"
-        dark: "#2b2b2b"
-        secondary: "#284b63"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#fff23688"
+        light: "#e4e6eb"
+        lightgray: "#a9a7c0"
+        gray: "#6d7d85"
+        darkgray: "#585f75"
+        dark: "#2e3640"
+        secondary: "#476f8e"
+        tertiary: "#595d5c"
+        highlight: rgba(71, 111, 142, 0.14)
+        textHighlight: "#a9a7c066"
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#24282d"
+        lightgray: "#585f75"
+        gray: "#6d7d85"
+        darkgray: "#a9a7c0"
+        dark: "#eef2f5"
+        secondary: "#6d7d85"
+        tertiary: "#476f8e"
+        highlight: rgba(71, 111, 142, 0.16)
+        textHighlight: "#476f8e55"
 plugins:
   - source: "@quartz-community/created-modified-date"
     enabled: true
@@ -252,12 +251,30 @@ plugins:
   - source: "@quartz-community/note-properties"
     enabled: true
     options:
-      includeAll: false
+      includeAll: true
       includedProperties:
         - description
         - tags
         - aliases
-      excludedProperties: []
+      excludedProperties:
+        - title
+        - description
+        - aliases
+        - alias
+        - cssclasses
+        - cssclass
+        - publish
+        - draft
+        - image
+        - cover
+        - socialImage
+        - socialDescription
+        - quartz-properties
+        - quartzProperties
+        - quartz-properties-collapse
+        - quartzPropertiesCollapse
+        - enableToc
+        - lang
       hidePropertiesView: false
       delimiters: ---
       language: yaml

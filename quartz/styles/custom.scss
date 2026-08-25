@@ -422,3 +422,438 @@ html[saved-theme="light"] .toc a:hover {
   color: #40495d !important;
   opacity: 1 !important;
 }
+
+/* === ACCUEIL VENDEAUME V1 : DEBUT === */
+
+/* Accueil : on retire les éléments techniques propres à une note Obsidian. */
+[data-slug="index"] .note-properties,
+[data-slug="index"] .metadata,
+[data-slug="index"] .metadata-container,
+[data-slug="index"] .content-meta,
+[data-slug="index"] .breadcrumb-container {
+  display: none !important;
+}
+
+/* Respiration de l'accueil */
+[data-slug="index"] article {
+  padding-top: .35rem;
+}
+
+[data-slug="index"] article > h1 {
+  text-align: center !important;
+  font-size: clamp(1.85rem, 3vw, 2.55rem) !important;
+  letter-spacing: .055em !important;
+  margin-bottom: .45rem !important;
+}
+
+[data-slug="index"] article > h1 + p {
+  text-align: center !important;
+  color: #a9a7c0 !important;
+  font-size: 1.02rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 1.3rem !important;
+}
+
+/* Emblème de l'accueil */
+[data-slug="index"] .archive-emblem {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 1.4rem auto 1.8rem !important;
+}
+
+[data-slug="index"] .archive-emblem p {
+  margin: 0 !important;
+  text-align: center !important;
+}
+
+[data-slug="index"] .archive-emblem img {
+  display: block !important;
+  width: min(100%, 390px) !important;
+  max-height: 390px !important;
+  object-fit: contain !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* Portails : la liste Markdown devient une grille de fiches. */
+[data-slug="index"] article h2#portails-des-archives + ul {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: .8rem !important;
+  padding: 0 !important;
+  margin: 1rem 0 1.8rem !important;
+  list-style: none !important;
+}
+
+[data-slug="index"] article h2#portails-des-archives + ul > li {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: .95rem 1rem !important;
+  min-height: 92px !important;
+  border: 1px solid #595d5c !important;
+  border-left: 4px solid #476f8e !important;
+  border-radius: 6px !important;
+  background: rgba(71, 111, 142, .08) !important;
+  box-shadow: 0 3px 10px rgba(0,0,0,.08) !important;
+  transition: transform .12s ease, background .12s ease, border-color .12s ease !important;
+}
+
+[data-slug="index"] article h2#portails-des-archives + ul > li:hover {
+  transform: translateY(-2px) !important;
+  background: rgba(71, 111, 142, .15) !important;
+  border-color: #6d7d85 !important;
+}
+
+[data-slug="index"] article h2#portails-des-archives + ul > li a {
+  font-size: 1.05rem !important;
+  color: #b7bfd0 !important;
+  text-decoration: none !important;
+}
+
+[data-slug="index"] article h2#portails-des-archives + ul > li a:hover {
+  color: #d2d0e1 !important;
+}
+
+/* Le callout d'accueil reste sobre et intégré à la palette. */
+[data-slug="index"] .callout {
+  margin: 1.35rem 0 !important;
+}
+
+/* Bas de page plus discret. */
+[data-slug="index"] article > hr + p:last-child {
+  text-align: center !important;
+  opacity: .7 !important;
+  font-size: .9rem !important;
+}
+
+/* Clair */
+html[saved-theme="light"] [data-slug="index"] article h2#portails-des-archives + ul > li {
+  background: rgba(71, 111, 142, .08) !important;
+  border-color: #a9a7c0 !important;
+  border-left-color: #476f8e !important;
+}
+
+html[saved-theme="light"] [data-slug="index"] article h2#portails-des-archives + ul > li a {
+  color: #40495d !important;
+}
+
+@media all and ($mobile) {
+  [data-slug="index"] article h2#portails-des-archives + ul {
+    grid-template-columns: 1fr !important;
+  }
+
+  [data-slug="index"] .archive-emblem img {
+    width: min(100%, 300px) !important;
+  }
+}
+
+/* === ACCUEIL VENDEAUME V1 : FIN === */
+
+/* === VENDEAUME FULL PACKAGE : DEBUT === */
+
+/* =========================================================
+   GRANDES ARCHIVES DE VENDEAUME — FICHES COMPLÈTES
+   S'appuie sur data-slug : aucune note n'est modifiée.
+   ========================================================= */
+
+/* ---------- STRUCTURE GÉNÉRALE DES FICHES ---------- */
+[data-slug*="01-institution"],
+[data-slug*="02-collections"],
+[data-slug*="03-artefacts-recherches"],
+[data-slug*="04-enquetes"],
+[data-slug*="05-patrimoine"],
+[data-slug*="06-personnes"],
+[data-slug*="07-lieux"],
+[data-slug*="08-sources"],
+[data-slug*="09-fonds-de-skadi"],
+[data-slug*="10-travaux-des-archivistes"] {
+  --archive-accent: #476f8e;
+  --archive-accent-soft: rgba(71,111,142,.12);
+  --archive-label: "Dossier d'archive";
+}
+
+/* Variantes par fonds */
+[data-slug*="01-institution"] {
+  --archive-accent: #a9a7c0;
+  --archive-accent-soft: rgba(169,167,192,.10);
+  --archive-label: "Institution";
+}
+
+[data-slug*="02-collections"] {
+  --archive-accent: #585f75;
+  --archive-accent-soft: rgba(88,95,117,.14);
+  --archive-label: "Collection";
+}
+
+[data-slug*="03-artefacts-recherches"] {
+  --archive-accent: #a9a7c0;
+  --archive-accent-soft: rgba(169,167,192,.12);
+  --archive-label: "Artefact recherché";
+}
+
+[data-slug*="04-enquetes"] {
+  --archive-accent: #476f8e;
+  --archive-accent-soft: rgba(71,111,142,.14);
+  --archive-label: "Dossier d'enquête";
+}
+
+[data-slug*="05-patrimoine"] {
+  --archive-accent: #6d7d85;
+  --archive-accent-soft: rgba(109,125,133,.14);
+  --archive-label: "Patrimoine";
+}
+
+[data-slug*="06-personnes"] {
+  --archive-accent: #6d7d85;
+  --archive-accent-soft: rgba(109,125,133,.12);
+  --archive-label: "Notice biographique";
+}
+
+[data-slug*="07-lieux"] {
+  --archive-accent: #595d5c;
+  --archive-accent-soft: rgba(89,93,92,.16);
+  --archive-label: "Lieu documenté";
+}
+
+[data-slug*="08-sources"] {
+  --archive-accent: #7891a2;
+  --archive-accent-soft: rgba(120,145,162,.12);
+  --archive-label: "Source";
+}
+
+[data-slug*="09-fonds-de-skadi"] {
+  --archive-accent: #476f8e;
+  --archive-accent-soft: rgba(71,111,142,.12);
+  --archive-label: "Fonds de Skadi";
+}
+
+[data-slug*="10-travaux-des-archivistes"] {
+  --archive-accent: #a9a7c0;
+  --archive-accent-soft: rgba(169,167,192,.10);
+  --archive-label: "Travail des Archivistes";
+}
+
+/* Étiquette de fonds avant le titre */
+[data-slug*="01-institution"] .article-title::before,
+[data-slug*="02-collections"] .article-title::before,
+[data-slug*="03-artefacts-recherches"] .article-title::before,
+[data-slug*="04-enquetes"] .article-title::before,
+[data-slug*="05-patrimoine"] .article-title::before,
+[data-slug*="06-personnes"] .article-title::before,
+[data-slug*="07-lieux"] .article-title::before,
+[data-slug*="08-sources"] .article-title::before,
+[data-slug*="09-fonds-de-skadi"] .article-title::before,
+[data-slug*="10-travaux-des-archivistes"] .article-title::before {
+  content: var(--archive-label) !important;
+  display: block !important;
+  width: fit-content !important;
+  margin-bottom: .55rem !important;
+  padding: .22rem .55rem !important;
+  border: 1px solid color-mix(in srgb, var(--archive-accent) 72%, #595d5c 28%) !important;
+  border-radius: 999px !important;
+  background: var(--archive-accent-soft) !important;
+  color: color-mix(in srgb, var(--archive-accent) 80%, #eef2f5 20%) !important;
+  font-size: .68rem !important;
+  font-family: var(--bodyFont) !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  letter-spacing: .11em !important;
+  text-transform: uppercase !important;
+  font-variant: normal !important;
+}
+
+/* Ligne d'accent sous le titre */
+[data-slug*="01-institution"] .article-title,
+[data-slug*="02-collections"] .article-title,
+[data-slug*="03-artefacts-recherches"] .article-title,
+[data-slug*="04-enquetes"] .article-title,
+[data-slug*="05-patrimoine"] .article-title,
+[data-slug*="06-personnes"] .article-title,
+[data-slug*="07-lieux"] .article-title,
+[data-slug*="08-sources"] .article-title,
+[data-slug*="09-fonds-de-skadi"] .article-title,
+[data-slug*="10-travaux-des-archivistes"] .article-title {
+  border-bottom: 2px solid var(--archive-accent) !important;
+  padding-bottom: .65rem !important;
+}
+
+/* ---------- PANNEAU DE PROPRIÉTÉS ---------- */
+[data-slug*="01-institution"] .note-properties,
+[data-slug*="02-collections"] .note-properties,
+[data-slug*="03-artefacts-recherches"] .note-properties,
+[data-slug*="04-enquetes"] .note-properties,
+[data-slug*="05-patrimoine"] .note-properties,
+[data-slug*="06-personnes"] .note-properties,
+[data-slug*="07-lieux"] .note-properties,
+[data-slug*="08-sources"] .note-properties,
+[data-slug*="09-fonds-de-skadi"] .note-properties,
+[data-slug*="10-travaux-des-archivistes"] .note-properties {
+  margin: .9rem 0 1.35rem !important;
+  border: 1px solid #595d5c !important;
+  border-left: 4px solid var(--archive-accent) !important;
+  border-radius: 6px !important;
+  background: var(--archive-accent-soft) !important;
+  box-shadow: 0 4px 14px rgba(0,0,0,.10) !important;
+  overflow: hidden !important;
+}
+
+[data-slug*="01-institution"] .note-properties-title,
+[data-slug*="02-collections"] .note-properties-title,
+[data-slug*="03-artefacts-recherches"] .note-properties-title,
+[data-slug*="04-enquetes"] .note-properties-title,
+[data-slug*="05-patrimoine"] .note-properties-title,
+[data-slug*="06-personnes"] .note-properties-title,
+[data-slug*="07-lieux"] .note-properties-title,
+[data-slug*="08-sources"] .note-properties-title,
+[data-slug*="09-fonds-de-skadi"] .note-properties-title,
+[data-slug*="10-travaux-des-archivistes"] .note-properties-title {
+  color: #c6c5d6 !important;
+  font-weight: 700 !important;
+}
+
+/* Tableau des propriétés façon registre */
+[data-slug*="01-institution"] .note-properties table,
+[data-slug*="02-collections"] .note-properties table,
+[data-slug*="03-artefacts-recherches"] .note-properties table,
+[data-slug*="04-enquetes"] .note-properties table,
+[data-slug*="05-patrimoine"] .note-properties table,
+[data-slug*="06-personnes"] .note-properties table,
+[data-slug*="07-lieux"] .note-properties table,
+[data-slug*="08-sources"] .note-properties table,
+[data-slug*="09-fonds-de-skadi"] .note-properties table,
+[data-slug*="10-travaux-des-archivistes"] .note-properties table {
+  margin: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+}
+
+.note-properties td:first-child {
+  color: #a9a7c0 !important;
+  font-weight: 700 !important;
+  text-transform: capitalize !important;
+  width: 30% !important;
+}
+
+/* ---------- CONTENU DE FICHE ---------- */
+[data-slug*="01-institution"] article h2,
+[data-slug*="02-collections"] article h2,
+[data-slug*="03-artefacts-recherches"] article h2,
+[data-slug*="04-enquetes"] article h2,
+[data-slug*="05-patrimoine"] article h2,
+[data-slug*="06-personnes"] article h2,
+[data-slug*="07-lieux"] article h2,
+[data-slug*="08-sources"] article h2,
+[data-slug*="09-fonds-de-skadi"] article h2,
+[data-slug*="10-travaux-des-archivistes"] article h2 {
+  border-bottom: 1px solid color-mix(in srgb, var(--archive-accent) 55%, #595d5c 45%) !important;
+  margin-top: 2rem !important;
+}
+
+[data-slug*="01-institution"] article h2::before,
+[data-slug*="02-collections"] article h2::before,
+[data-slug*="03-artefacts-recherches"] article h2::before,
+[data-slug*="04-enquetes"] article h2::before,
+[data-slug*="05-patrimoine"] article h2::before,
+[data-slug*="06-personnes"] article h2::before,
+[data-slug*="07-lieux"] article h2::before,
+[data-slug*="08-sources"] article h2::before,
+[data-slug*="09-fonds-de-skadi"] article h2::before,
+[data-slug*="10-travaux-des-archivistes"] article h2::before {
+  color: var(--archive-accent) !important;
+}
+
+/* Citations = témoignages / extraits de registre */
+[data-slug*="01-institution"] article blockquote,
+[data-slug*="02-collections"] article blockquote,
+[data-slug*="03-artefacts-recherches"] article blockquote,
+[data-slug*="04-enquetes"] article blockquote,
+[data-slug*="05-patrimoine"] article blockquote,
+[data-slug*="06-personnes"] article blockquote,
+[data-slug*="07-lieux"] article blockquote,
+[data-slug*="08-sources"] article blockquote,
+[data-slug*="09-fonds-de-skadi"] article blockquote,
+[data-slug*="10-travaux-des-archivistes"] article blockquote {
+  border-left-color: var(--archive-accent) !important;
+  background: var(--archive-accent-soft) !important;
+}
+
+/* Images de dossier */
+[data-slug*="01-institution"] article img,
+[data-slug*="02-collections"] article img,
+[data-slug*="03-artefacts-recherches"] article img,
+[data-slug*="04-enquetes"] article img,
+[data-slug*="05-patrimoine"] article img,
+[data-slug*="06-personnes"] article img,
+[data-slug*="07-lieux"] article img,
+[data-slug*="08-sources"] article img,
+[data-slug*="09-fonds-de-skadi"] article img,
+[data-slug*="10-travaux-des-archivistes"] article img {
+  border-color: color-mix(in srgb, var(--archive-accent) 55%, #595d5c 45%) !important;
+  outline-color: color-mix(in srgb, var(--archive-accent) 22%, transparent) !important;
+}
+
+/* Callouts intégrés au type de dossier */
+[data-slug*="01-institution"] .callout,
+[data-slug*="02-collections"] .callout,
+[data-slug*="03-artefacts-recherches"] .callout,
+[data-slug*="04-enquetes"] .callout,
+[data-slug*="05-patrimoine"] .callout,
+[data-slug*="06-personnes"] .callout,
+[data-slug*="07-lieux"] .callout,
+[data-slug*="08-sources"] .callout,
+[data-slug*="09-fonds-de-skadi"] .callout,
+[data-slug*="10-travaux-des-archivistes"] .callout {
+  border-color: color-mix(in srgb, var(--archive-accent) 58%, #595d5c 42%) !important;
+}
+
+/* ---------- PAGES DE DOSSIERS / LISTINGS ---------- */
+.section-ul {
+  padding-left: 0 !important;
+  list-style: none !important;
+}
+
+.section-ul > .section-li {
+  margin: .55rem 0 !important;
+  padding: .75rem .9rem !important;
+  border: 1px solid #595d5c !important;
+  border-left: 3px solid #476f8e !important;
+  border-radius: 5px !important;
+  background: rgba(71,111,142,.06) !important;
+}
+
+.section-ul > .section-li:hover {
+  background: rgba(71,111,142,.12) !important;
+  border-color: #6d7d85 !important;
+}
+
+/* ---------- LISIBILITÉ DES TAGS ---------- */
+.tag-link,
+a.tag-link,
+.tags a {
+  text-decoration: none !important;
+}
+
+/* ---------- MOBILE ---------- */
+@media all and ($mobile) {
+  .note-properties td:first-child {
+    width: 38% !important;
+  }
+
+  [data-slug*="01-institution"] .article-title::before,
+  [data-slug*="02-collections"] .article-title::before,
+  [data-slug*="03-artefacts-recherches"] .article-title::before,
+  [data-slug*="04-enquetes"] .article-title::before,
+  [data-slug*="05-patrimoine"] .article-title::before,
+  [data-slug*="06-personnes"] .article-title::before,
+  [data-slug*="07-lieux"] .article-title::before,
+  [data-slug*="08-sources"] .article-title::before,
+  [data-slug*="09-fonds-de-skadi"] .article-title::before,
+  [data-slug*="10-travaux-des-archivistes"] .article-title::before {
+    font-size: .62rem !important;
+  }
+}
+
+/* === VENDEAUME FULL PACKAGE : FIN === */
