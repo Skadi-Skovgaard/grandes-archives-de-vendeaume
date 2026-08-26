@@ -23,13 +23,13 @@ Sa dernière bataille se serait déroulée au [[Bosquet de Kyne]].
 Ancienne tombe de [[Borgas]] et lieu où la Couronne fut retrouvée en 4E 201. Même si elle n'y repose plus, le site peut contenir des indices sur son parcours.
 
 ### [[Clan Cruellemer]]
-Nom ressorti lors d'une enquête sur les clans ayant montré un intérêt pour le Bosquet de Kyne.
+Nom ressorti lors de l'enquête au Bosquet de Kyne. La source exacte de cette mention n'est pas consignée dans le rapport actuel et aucun lien direct avec la Couronne n'est établi.
 
 ### [[Primarbor]]
-Piste évoquée par [[Hjalmar Brise-Hiver]] dans le contexte de la mort d'Ulfric. La raison exacte reste à éclaircir.
+Piste attribuée à [[Hjalmar Brise-Hiver]]. La raison précise de cette mention n'a pas été consignée.
 
 ### [[Thalmor]]
-Rumeur selon laquelle le Thalmor posséderait actuellement la Couronne. Le mobile politique paraît plausible, mais aucune preuve directe n'est connue.
+Rumeur selon laquelle le Thalmor posséderait actuellement la Couronne. Aucune preuve directe n'est connue.
 
 ### [[Aubétoile]]
 Piste maintenue mais affaiblie : Hjalmar estime que si la régence détenait réellement la Couronne ou une piste solide, elle aurait probablement exploité ce symbole lors du dernier Conseil des Jarls.
@@ -39,6 +39,9 @@ Hypothèse secondaire : la Couronne aurait pu être restituée à un tombeau li�
 
 ### [[Temple caché de Markarth]]
 Site d'intérêt découvert lors d'une expédition des Archivistes. Son lien avec la Couronne n'est pas établi.
+
+### Renseignements de [[SCN]]
+Des rumeurs supplémentaires concernant la Couronne et Sir Moria ont été transmises par SCN. Elles sont conservées séparément dans [[Renseignements bruts - Couronne d'Os et Sir Moria]] et doivent être prises avec précaution.
 
 ## Axe prioritaire proposé
 

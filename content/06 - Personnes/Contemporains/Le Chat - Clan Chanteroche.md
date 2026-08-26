@@ -13,12 +13,10 @@ tags:
 
 Membre du [[Clan Chanteroche]] rencontré par Skadi à l'époque où elle servait comme banneret de Markarth.
 
-## Souvenir de Skadi
+## Formule associée
 
-Il aurait enseigné ou employé une formule ressemblant à :
+La formulation suivante est désormais considérée comme **confirmée** :
 
 > « Gloire à ceux qui sont morts. »
 
-**Fiabilité :** souvenir ancien ; formulation exacte à confirmer.
-
-Aucun lien direct avec le [[Temple caché de Markarth]] n'est démontré.
+Aucun rôle précis du Chat dans le [[Temple caché de Markarth]] n'est actuellement démontré.

@@ -27,9 +27,10 @@ Le fait que la griffe soit restée sur place suggère un **vol sélectif** plut�
 
 ### 1 — Les clans d'Estemarche
 
-Le [[Clan Brise-Bouclier]] fréquente le tertre de façon hebdomadaire pour des réunions ou conseils.
+Un renseignement indique que le [[Clan Brise-Bouclier]] fréquenterait le tertre à fréquence hebdomadaire pour des réunions ou conseils. La source serait probablement le clan lui-même, mais cela reste à confirmer.
 
-Visiteurs récemment mentionnés :
+Des visiteurs récents ont été mentionnés **par la garde** :
+
 - [[Ygnar]]
 - [[Stan-Aldor]]
 - compagnons non identifiés.
@@ -38,7 +39,7 @@ Objectif : resserrer la fenêtre temporelle du vol et identifier d'éventuels t�
 
 ### 2 — Aubétoile
 
-Le Jarl [[Tormund Sombre-Loup]] aurait montré un intérêt pour le casque. Motif politique possible, mais aucune preuve directe.
+Le Jarl [[Tormund Sombre-Loup]] a été mentionné comme possible personne intéressée par le casque. La source exacte de cette information et le motif supposé ne sont pas consignés.
 
 ### 3 — La Graine et le Verger
 

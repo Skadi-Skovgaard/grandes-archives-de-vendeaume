@@ -2,7 +2,7 @@
 type: enquete
 statut: effectuée
 lieu: Bosquet de Kyne
-certitude: confirmé
+certitude: partielle
 tags:
   - couronne-os
   - bosquet-de-kyne
@@ -22,3 +22,7 @@ Aucun des deux n'a fourni d'information directe sur la Couronne.
 ## Piste née de l'entretien
 
 En demandant quels clans avaient tenté de reprendre le Bosquet ou manifesté une hostilité particulière, un nom est ressorti : [[Clan Cruellemer]].
+
+La **source précise de cette mention n'a pas été conservée dans le rapport actuellement disponible**.
+
+Aucun lien direct entre le Clan Cruellemer et la [[Couronne d'Os]] n'est établi.

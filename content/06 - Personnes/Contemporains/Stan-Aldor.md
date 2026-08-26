@@ -1,10 +1,18 @@
 ---
 type: personne
 statut: contemporain
+source: témoignage de la garde
+certitude: partielle
 tags:
   - contemporain
+  - yngol
+  - temoin
 ---
 
 # Stan-Aldor
 
-Personne mentionnée comme s'étant récemment rendue dans le [[Tertre d'Yngol]].
+Stan-Aldor a été mentionné, **selon un témoignage de la garde**, comme s'étant récemment rendu dans le [[Tertre d'Yngol]].
+
+Aucune autre information fiable n'est actuellement consignée à son sujet.
+
+**Source : témoignage de la garde.**

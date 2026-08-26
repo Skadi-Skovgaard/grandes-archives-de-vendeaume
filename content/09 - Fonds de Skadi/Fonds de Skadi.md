@@ -20,7 +20,7 @@ Fonds rassemblant les observations personnelles, journaux de terrain, renseignem
 - [[Manifestations célestes de Vifazur 4E 226]]
 
 ## Renseignements
-- [[Renseignements bruts - Capture La Géante]]
+- [[Renseignements bruts - SCN]]
 
 ## Théories
 - [[Théorie - Le Protocole de la Main Morte agit sur plusieurs complexes dwemers]]

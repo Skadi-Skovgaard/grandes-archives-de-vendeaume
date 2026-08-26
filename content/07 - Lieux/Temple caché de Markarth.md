@@ -2,7 +2,7 @@
 type: lieu
 statut: identifié / difficilement accessible
 region: Crevasse
-acces: via Kartecim selon connaissance actuelle
+acces: piste par une grotte reliée au camp de Karthecime
 certitude: partielle
 tags:
   - lieu
@@ -21,11 +21,23 @@ Temple découvert lors de la première expédition de Skadi avec les Archivistes
 
 Le sanctuaire se trouve au sommet d'un important promontoire rocheux, entouré ou partiellement dissimulé par des nuages ou une brume persistante.
 
-Aucun chemin ordinaire évident n'était visible depuis le point d'observation.
+La montagne apparaît **trop abrupte pour offrir un accès ordinaire évident** depuis le point d'observation.
 
-## Accès connu
+## Piste d'accès
 
-Le seul accès connu de Skadi passerait par le camp crevassais de [[Kartecim]], associé au [[Clan Chanteroche]].
+Lors d'une exploration avec les Archivistes, une **grotte reliée au camp de [[Karthecime]]** a été observée.
+
+Un **brasero était visible à l'entrée de cette grotte**.
+
+Cette grotte constitue actuellement la principale piste d'accès connue vers le temple.
+
+## Formule associée
+
+La formule suivante est considérée comme **confirmée** :
+
+> « Gloire à ceux qui sont morts. »
+
+Elle est également associée au souvenir de [[Le Chat - Clan Chanteroche]].
 
 ## Lien avec la Couronne d'Os
 

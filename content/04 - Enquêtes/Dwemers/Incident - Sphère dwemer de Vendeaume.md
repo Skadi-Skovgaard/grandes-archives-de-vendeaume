@@ -20,3 +20,13 @@ Elle aurait poursuivi sa route jusqu'au port avant d'exploser, blessant plusieur
 Certains affirment que la machine « parlait » ou produisait des sons suffisamment articulés pour être compris comme des paroles. D'autres disent n'avoir rien entendu de semblable.
 
 **Capacité vocale : non établie.**
+
+
+<!-- DWEMER-26-08-SPHERE -->
+## Nouvel incident au pont de Vendeaume
+
+Une sphère dwemer a de nouveau attaqué le pont de Vendeaume, avec **plusieurs explosions**.
+
+Ces attaques ont provoqué l’envoi d’une nouvelle expédition vers [[Mzulft]].
+
+Voir [[Entrée secondaire - Mzulft et seconde ruine dwemer]] et [[Observation - Sphère dwemer]].
